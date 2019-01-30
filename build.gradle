@@ -1,8 +1,12 @@
 buildscript {
     ext {
         springBootVersion = '2.1.2.RELEASE'
+        thymeleafVersion = '3.0.11.RELEASE'
     }
+    ext['thymeleaf-layout-dialect.version'] = '2.2.0'
+
     repositories {
+        maven {url 'http://maven.aliyun.com/nexus/content/groups/public/'}
         mavenCentral()
     }
     dependencies {
